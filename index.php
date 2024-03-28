@@ -1,7 +1,6 @@
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Главная");
 ?>
-	<main class="website-workarea">
        <?php if (!isset($_GET['ELEMENT_ID'])): ?>
 	<section class="banner banner_before1" style="background-image: url('https://i.ibb.co/6R4SqGv/banner-blog.jpg');">
 <div class="banner-wrapper">
@@ -142,5 +141,4 @@ $APPLICATION->SetTitle("Главная");
 		"VARIABLE_ALIASES" => Array("ELEMENT_ID"=>"ELEMENT_ID","SECTION_ID"=>"SECTION_ID")
 	)
 );?>
-	</main>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

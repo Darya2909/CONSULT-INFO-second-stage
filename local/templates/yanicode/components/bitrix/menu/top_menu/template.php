@@ -8,7 +8,9 @@
     <?endforeach?>
 		</nav>
 		<div class="header__phone">
-			<a href="tel:+79114510616">+79114510616</a>
+			<a href="tel:<?php $APPLICATION->IncludeFile(SITE_DIR . 'include/header/phone.php', [], ['SHOW_BORDER' => false, 'MODE' => 'php']); ?>" class="contacts__mail contacts__list-a" itemprop="telephone">
+                <?php $APPLICATION->IncludeFile(SITE_DIR . 'include/header/phone.php', [], ['MODE' => 'php']); ?>
+			</a>
 		</div>
 	</div>
 <?php endif; ?>

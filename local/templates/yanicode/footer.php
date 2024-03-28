@@ -4,7 +4,7 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	die();
 }
 ?>
-
+</main>
 <footer class="footer">
 	<div class="container">
 		<div class="footer-wrapper">
@@ -13,7 +13,9 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 			</a>
 			<div class="footer__feedback">
 				<div class="footer__mail">
-					<a href="mailto:info@yanicode.ru">info@yanicode.ru</a>
+					<a href="mailto:<?php $APPLICATION->IncludeFile(SITE_DIR . 'include/header/email.php', [], ['SHOW_BORDER' => false, 'MODE' => 'php']); ?>" class="contacts__mail contacts__list-a" itemprop="email">
+                        <?php $APPLICATION->IncludeFile(SITE_DIR . 'include/header/email.php', [], ['MODE' => 'php']); ?>
+					</a>
 				</div>
 				<div class="footer__networks">
 					<a href="">
@@ -50,11 +52,13 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 					</a>
 				</div>
 				<div class="footer__phone">
-					<a href="tel:+79114510616">+79114510616</a>
+					<a href="tel:<?php $APPLICATION->IncludeFile(SITE_DIR . 'include/header/phone.php', [], ['SHOW_BORDER' => false, 'MODE' => 'php']); ?>" class="contacts__mail contacts__list-a" itemprop="telephone">
+                        <?php $APPLICATION->IncludeFile(SITE_DIR . 'include/header/phone.php', [], ['MODE' => 'php']); ?>
+					</a>
 				</div>
 			</div>
 			<div class="footer__law">
-				YANICODE 2020 © ВСЕ ПРАВА ЗАЩИЩЕНЫ.
+				YANICODE <?php echo date("Y"); ?> © ВСЕ ПРАВА ЗАЩИЩЕНЫ.
 				ЛЮБОЕ ИСПОЛЬЗОВАНИЕ МАТЕРИАЛОВ
 				ВОЗМОЖНО ТОЛЬКО С СОГЛАСИЯ
 				ПРАВООБЛАДАТЕЛЯ.

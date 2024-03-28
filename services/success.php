@@ -1,6 +1,5 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");?>
 
-    <main class="website-workarea">
 	    <section class="banner banner_before54" style="background-image: url(https://i.ibb.co/X48nk64/banner-services.jpg);">
 		    <div class="banner-wrapper">
 			    <div class="container">
@@ -43,5 +42,4 @@
         <div class="container">
             <h1 class="text_gold">Форма успешно отправлена</h1>
         </div>
-    </main>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

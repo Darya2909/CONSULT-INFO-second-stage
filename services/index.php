@@ -2,7 +2,6 @@
 $APPLICATION->SetTitle('Сервисы');
 ?>
 
-	<main class="website-workarea">
 		<section class="banner banner_before54" style="background-image: url(https://i.ibb.co/X48nk64/banner-services.jpg);">
 			<div class="banner-wrapper">
 				<div class="container">

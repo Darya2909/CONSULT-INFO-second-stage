@@ -18,6 +18,9 @@ use Bitrix\Main\Page\Asset;
 	<title><?$APPLICATION->ShowTitle();?></title>
 	<?php
 	Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/template_styles.css');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/build.js');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/vendor/swiper-bundle.min.js');
+    Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/vendor/inputmask.min.js');
 	?>
 	<?$APPLICATION->ShowHead();?>
 </head>
@@ -37,6 +40,7 @@ use Bitrix\Main\Page\Asset;
 				<span class="burger-line"></span>
 				<span class="burger-line"></span>
 			</div>
+			<main class="website-workarea">
             <? $APPLICATION->IncludeComponent(
                 "bitrix:menu",
                 "top_menu",
